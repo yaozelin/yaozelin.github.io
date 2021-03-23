@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Incredible">
+    <meta name="keywords" content="正则表达式（一）, Incredible">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | Incredible</title>
+    <title>正则表达式（一） | Incredible</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -223,12 +223,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">正则表达式（一）</h1>
                 </div>
             </div>
         </div>
@@ -342,9 +342,21 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/JavaScript/">
+                                <span class="chip bg-color">JavaScript</span>
+                            </a>
+                        
+                            <a href="/tags/HTML5/">
+                                <span class="chip bg-color">HTML5</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
+                                <span class="chip bg-color">正则表达式</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -356,7 +368,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-07-24
+                    2019-10-24
                 </div>
                 
 
@@ -377,20 +389,26 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span>
+                <h3 id="之前在两个页面URL传参的任务中用到了正则表达式，现在来系统的介绍一下正则表达式。"><a href="#之前在两个页面URL传参的任务中用到了正则表达式，现在来系统的介绍一下正则表达式。" class="headerlink" title="之前在两个页面URL传参的任务中用到了正则表达式，现在来系统的介绍一下正则表达式。"></a>之前在两个页面URL传参的任务中用到了正则表达式，现在来系统的介绍一下正则表达式。</h3><p><strong>首先要知道为什么用正则</strong></p>
+<p>典型的搜索和替换操作要求您提供与预期的搜索结果匹配的确切文本。虽然这种技术对于对静态文本执行简单搜索和替换任务可能已经足够了，但它缺乏灵活性，<br>若采用这种方法搜索动态文本，即使不是不可能，至少也会变得很困难。<br>通过使用正则表达式，可以：<br>测试字符串内的模式。<br>例如，可以测试输入字符串，以查看字符串内是否出现电话号码模式或信用卡号码模式。这称为数据验证。<br>替换文本。<br>可以使用正则表达式来识别文档中的特定文本，完全删除该文本或者用其他文本替换它。<br>基于模式匹配从字符串中提取子字符串。<br>可以查找文档内或输入域内特定的文本。<br>例如，您可能需要搜索整个网站，删除过时的材料，以及替换某些 HTML 格式标记。在这种情况下，可以使用正则表达式来确定在每个文件中是否出现该材料或该<br> HTML 格式标记。此过程将受影响的文件列表缩小到包含需要删除或更改的材料的那些文件。然后可以使用正则表达式来删除过时的材料。最后，可以使用正则表<br> 达式来搜索和替换标记。</p>
+<p><strong>一些基础的查询如下</strong></p>
+<pre class=" language-bash"><code class="language-bash"><span class="token punctuation">[</span>0-9<span class="token punctuation">]</span>+匹配多个数字， <span class="token punctuation">[</span>0-9<span class="token punctuation">]</span> 匹配单个数字，+ 匹配一个或者多个。
+abc$匹配字母 abc 并以 abc 结尾，$ 为匹配输入字符串的结束位置。
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server
+<p><strong>数：</strong></p>
+<pre class=" language-bash"><code class="language-bash"><span class="token keyword">function</span> getUrlParam<span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
+                var reg <span class="token operator">=</span> new RegExp<span class="token punctuation">(</span><span class="token string">"(^|&amp;)"</span> + name + <span class="token string">"=([^&amp;]*)(&amp;|$)"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                var r <span class="token operator">=</span> window.location.search.substr<span class="token punctuation">(</span>1<span class="token punctuation">)</span>.match<span class="token punctuation">(</span>reg<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>r <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token keyword">return</span> unescape<span class="token punctuation">(</span>r<span class="token punctuation">[</span>2<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">return</span> null<span class="token punctuation">;</span> 
+            <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
+            var x1 <span class="token operator">=</span> getUrlParam<span class="token punctuation">(</span><span class="token string">'参数'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>x1 <span class="token operator">==</span><span class="token operator">=</span> <span class="token string">"Customer Focus"</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
+                 document.getElementById<span class="token punctuation">(</span><span class="token string">"c"</span><span class="token punctuation">)</span>.click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125; </span>
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Clean"><a href="#Clean" class="headerlink" title="Clean"></a>Clean</h3><pre class=" language-bash"><code class="language-bash">$ hexo clean
-</code></pre>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p><strong>作</strong></p>
 
                 
             </div>
@@ -417,7 +435,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://zlincredible.com/2019/07/24/hello-world/">http://zlincredible.com/2019/07/24/hello-world/</a>
+                    <a href="http://zlincredible.com/2019/10/24/zheng-ze-biao-da-shi-yi/">http://zlincredible.com/2019/10/24/zheng-ze-biao-da-shi-yi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -454,7 +472,19 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/JavaScript/">
+                                    <span class="chip bg-color">JavaScript</span>
+                                </a>
+                            
+                                <a href="/tags/HTML5/">
+                                    <span class="chip bg-color">HTML5</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
+                                    <span class="chip bg-color">正则表达式</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -628,13 +658,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/08/20/windows-ji-hua-ren-wu/">
+                <a href="/2019/11/11/batch/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Windows计划任务">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="batch">
                         
-                        <span class="card-title">Windows计划任务</span>
+                        <span class="card-title">batch</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -645,7 +675,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-08-20
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-11-11
                         </span>
                         <span class="publish-author">
                             
@@ -658,8 +688,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Windows%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/">
-                        <span class="chip bg-color">Windows计划任务</span>
+                    <a href="/tags/batch/">
+                        <span class="chip bg-color">batch</span>
                     </a>
                     
                 </div>
@@ -670,16 +700,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/07/24/hello-world/">
+                <a href="/2019/10/11/yml-wen-jian-an-zhuang-app/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="yml文件安装app.md">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">yml文件安装app.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -690,7 +720,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-07-24
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-11
                             </span>
                         <span class="publish-author">
                             
@@ -700,7 +730,18 @@
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/docker/">
+                        <span class="chip bg-color">docker</span>
+                    </a>
+                    
+                    <a href="/tags/yml/">
+                        <span class="chip bg-color">yml</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
