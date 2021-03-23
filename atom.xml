@@ -6,7 +6,7 @@
   <link href="http://zlincredible.com/atom.xml" rel="self"/>
   
   <link href="http://zlincredible.com/"/>
-  <updated>2021-03-23T15:35:25.066Z</updated>
+  <updated>2021-03-23T15:41:05.802Z</updated>
   <id>http://zlincredible.com/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>docker安装</title>
+    <link href="http://zlincredible.com/2020/01/01/docker-an-zhuang/"/>
+    <id>http://zlincredible.com/2020/01/01/docker-an-zhuang/</id>
+    <published>2020-01-01T09:10:24.000Z</published>
+    <updated>2021-03-23T15:41:05.802Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="docker安装"><a href="#docker安装" class="headerlink" title="docker安装"></a>docker安装</h2><h3 id="控制面板-gt-程序-gt-启用或关闭Windows功能-gt-把Hyper-v勾上-gt-重启电脑"><a href="#控制面板-gt-程序-gt-启用或关闭Windows功能-gt-把Hyper-v勾上-gt-重启电脑" class="headerlink" title="控制面板-&gt;程序-&gt;启用或关闭Windows功能-&gt;把Hyper-v勾上-&gt;重启电脑"></a>控制面板-&gt;程序-&gt;启用或关闭Windows功能-&gt;把Hyper-v勾上-&gt;重启电脑</h3><h3 id="重启之后打开任务管理器，点性能，发现cpu已经虚拟化了"><a href="#重启之后打开任务管理器，点性能，发现cpu已经虚拟化了" class="headerlink" title="重启之后打开任务管理器，点性能，发现cpu已经虚拟化了"></a>重启之后打开任务管理器，点性能，发现cpu已经虚拟化了</h3><h3 id="打开链接-https-docs-docker-com-docker-for-windows-install-download-docker-for-windows"><a href="#打开链接-https-docs-docker-com-docker-for-windows-install-download-docker-for-windows" class="headerlink" title="打开链接 https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows"></a>打开链接 <a href="https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows">https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows</a></h3><h3 id="安装完后打开powershell，执行docker-–version"><a href="#安装完后打开powershell，执行docker-–version" class="headerlink" title="安装完后打开powershell，执行docker –version"></a>安装完后打开powershell，执行docker –version</h3><h3 id="进入链接-https-docs-microsoft-com-en-us-windows-wsl-install-win10-step-4-download-the-linux-kernel-update-package"><a href="#进入链接-https-docs-microsoft-com-en-us-windows-wsl-install-win10-step-4-download-the-linux-kernel-update-package" class="headerlink" title="进入链接 https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package"></a>进入链接 <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package">https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package</a></h3><h3 id="将上面下载的msi文件所在的文件夹，右键管理员权限这个msi文件。"><a href="#将上面下载的msi文件所在的文件夹，右键管理员权限这个msi文件。" class="headerlink" title="将上面下载的msi文件所在的文件夹，右键管理员权限这个msi文件。"></a>将上面下载的msi文件所在的文件夹，右键管理员权限这个msi文件。</h3>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;docker安装&quot;&gt;&lt;a href=&quot;#docker安装&quot; class=&quot;headerlink&quot; title=&quot;docker安装&quot;&gt;&lt;/a&gt;docker安装&lt;/h2&gt;&lt;h3 id=&quot;控制面板-gt-程序-gt-启用或关闭Windows功能-gt-把Hyper-v勾</summary>
+      
+    
+    
+    
+    
+    <category term="docker" scheme="http://zlincredible.com/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>yml文件安装app.md</title>
+    <link href="http://zlincredible.com/2019/10/11/yml-wen-jian-an-zhuang-app/"/>
+    <id>http://zlincredible.com/2019/10/11/yml-wen-jian-an-zhuang-app/</id>
+    <published>2019-10-11T09:40:24.000Z</published>
+    <updated>2021-03-23T15:44:12.795Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="yml文件安装app-md"><a href="#yml文件安装app-md" class="headerlink" title="yml文件安装app.md"></a>yml文件安装app.md</h2><h3 id="yml文件放到指定路径"><a href="#yml文件放到指定路径" class="headerlink" title="yml文件放到指定路径"></a>yml文件放到指定路径</h3><h3 id="在这个文件夹的路径下依次执行如下命令："><a href="#在这个文件夹的路径下依次执行如下命令：" class="headerlink" title="在这个文件夹的路径下依次执行如下命令："></a>在这个文件夹的路径下依次执行如下命令：</h3><pre class=" language-bash"><code class="language-bash">①docker-compose up -d mongo②docker-compose up -d mongo-init-replica③docker-compose up -d rocketchat④docker logs rocketchat_ap⑤docker-compose up -d hubot</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;yml文件安装app-md&quot;&gt;&lt;a href=&quot;#yml文件安装app-md&quot; class=&quot;headerlink&quot; title=&quot;yml文件安装app.md&quot;&gt;&lt;/a&gt;yml文件安装app.md&lt;/h2&gt;&lt;h3 id=&quot;yml文件放到指定路径&quot;&gt;&lt;a href=</summary>
+      
+    
+    
+    
+    
+    <category term="docker" scheme="http://zlincredible.com/tags/docker/"/>
+    
+    <category term="yml" scheme="http://zlincredible.com/tags/yml/"/>
+    
+  </entry>
   
   <entry>
     <title>yml文件</title>
