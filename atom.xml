@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Incredible</title>
+  
+  
+  <link href="http://zlincredible.com/atom.xml" rel="self"/>
+  
+  <link href="http://zlincredible.com/"/>
+  <updated>2021-11-22T05:26:27.703Z</updated>
+  <id>http://zlincredible.com/</id>
+  
+  <author>
+    <name>zelin</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git秘钥</title>
+    <link href="http://zlincredible.com/2021/11/12/git-mi-yao/"/>
+    <id>http://zlincredible.com/2021/11/12/git-mi-yao/</id>
+    <published>2021-11-12T09:40:24.000Z</published>
+    <updated>2021-11-22T05:26:27.703Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h2><pre class=" language-bash"><code class="language-bash">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 </code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;命令&quot;&gt;&lt;a href=&quot;#命令&quot; class=&quot;headerlink&quot; title=&quot;命令&quot;&gt;&lt;/a&gt;命令&lt;/h2&gt;&lt;pre class=&quot; language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;ghp_wCQVKFnFOoJNf</summary>
+      
+    
+    
+    
+    
+    <category term="git" scheme="http://zlincredible.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>splunk设置反向代理</title>
+    <link href="http://zlincredible.com/2021/01/20/splunk-she-zhi-fan-xiang-dai-li/"/>
+    <id>http://zlincredible.com/2021/01/20/splunk-she-zhi-fan-xiang-dai-li/</id>
+    <published>2021-01-20T09:40:24.000Z</published>
+    <updated>2021-03-23T16:08:58.816Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="splunk设置反向代理"><a href="#splunk设置反向代理" class="headerlink" title="splunk设置反向代理"></a>splunk设置反向代理</h2><pre class=" language-bash"><code class="language-bash">splunk/etc/system/local/web.conf添加属性   root_endpoint <span class="token operator">=</span> /splunk注意是添加属性 不要删除那条设置的端口属性 </code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;splunk设置反向代理&quot;&gt;&lt;a href=&quot;#splunk设置反向代理&quot; class=&quot;headerlink&quot; title=&quot;splunk设置反向代理&quot;&gt;&lt;/a&gt;splunk设置反向代理&lt;/h2&gt;&lt;pre class=&quot; language-bash&quot;&gt;&lt;code</summary>
+      
+    
+    
+    
+    
+    <category term="splunk" scheme="http://zlincredible.com/tags/splunk/"/>
+    
+    <category term="反向代理" scheme="http://zlincredible.com/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>splunk的js</title>
+    <link href="http://zlincredible.com/2020/11/11/splunk-de-js/"/>
+    <id>http://zlincredible.com/2020/11/11/splunk-de-js/</id>
+    <published>2020-11-11T09:10:24.000Z</published>
+    <updated>2021-03-23T15:55:41.002Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="splunk的js"><a href="#splunk的js" class="headerlink" title="splunk的js"></a>splunk的js</h2><pre class=" language-bash"><code class="language-bash">require<span class="token punctuation">(</span><span class="token punctuation">[</span>    <span class="token string">'underscore'</span>,    <span class="token string">'jquery'</span>,    <span class="token string">'splunkjs/mvc'</span>,    <span class="token string">'splunkjs/mvc/simplexml/ready!'</span><span class="token punctuation">]</span>, function<span class="token punctuation">(</span>_, $, mvc<span class="token punctuation">)</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>   <span class="token keyword">function</span> getUrlParam<span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>                var reg <span class="token operator">=</span> new RegExp<span class="token punctuation">(</span><span class="token string">"(^|&amp;)"</span> + name + <span class="token string">"=([^&amp;]*)(&amp;|$)"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                var r <span class="token operator">=</span> window.location.search.substr<span class="token punctuation">(</span>1<span class="token punctuation">)</span>.match<span class="token punctuation">(</span>reg<span class="token punctuation">)</span><span class="token punctuation">;</span>                 <span class="token keyword">if</span> <span class="token punctuation">(</span>r <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token keyword">return</span> unescape<span class="token punctuation">(</span>r<span class="token punctuation">[</span>2<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                <span class="token keyword">return</span> null<span class="token punctuation">;</span>             <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>            var x1 <span class="token operator">=</span> getUrlParam<span class="token punctuation">(</span><span class="token string">'judge1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token keyword">if</span> <span class="token punctuation">(</span>x1 <span class="token operator">==</span><span class="token operator">=</span> <span class="token string">"Customer Focus"</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>                 document.getElementById<span class="token punctuation">(</span><span class="token string">"customerfocus"</span><span class="token punctuation">)</span>.click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125; else if (x1 === "Process") &amp;#123;</span>                 document.getElementById<span class="token punctuation">(</span><span class="token string">"itprocess"</span><span class="token punctuation">)</span>.click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125; else if (x1 === "Learning and Growth") &amp;#123;</span>                 document.getElementById<span class="token punctuation">(</span><span class="token string">"learning"</span><span class="token punctuation">)</span>.click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125; </span>            <span class="token keyword">else</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>                 document.getElementById<span class="token punctuation">(</span><span class="token string">"itprocess"</span><span class="token punctuation">)</span>.click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span><span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;);</span></code></pre><h3 id="追加说明"><a href="#追加说明" class="headerlink" title="追加说明"></a>追加说明</h3><p>JS的上传并调试<br>    1.新建JS文件<br>    2.放到路径下 C:Program Files\Splunk\etc\apps\search\appserver\static<br>    （source）里不要忘了引用这个file.js文件<br>    3._bump<br>    4.刷新页面</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;splunk的js&quot;&gt;&lt;a href=&quot;#splunk的js&quot; class=&quot;headerlink&quot; title=&quot;splunk的js&quot;&gt;&lt;/a&gt;splunk的js&lt;/h2&gt;&lt;pre class=&quot; language-bash&quot;&gt;&lt;code class=&quot;lang</summary>
+      
+    
+    
+    
+    
+    <category term="splunk" scheme="http://zlincredible.com/tags/splunk/"/>
+    
+    <category term="js" scheme="http://zlincredible.com/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>将splunk的index存到别的盘</title>
+    <link href="http://zlincredible.com/2020/11/11/jiang-splunk-de-index-cun-dao-bie-de-pan/"/>
+    <id>http://zlincredible.com/2020/11/11/jiang-splunk-de-index-cun-dao-bie-de-pan/</id>
+    <published>2020-11-11T09:10:24.000Z</published>
+    <updated>2021-03-23T16:04:12.190Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="将splunk的index存到别的盘"><a href="#将splunk的index存到别的盘" class="headerlink" title="将splunk的index存到别的盘"></a>将splunk的index存到别的盘</h2><p>方法一：更改环境变量<br>  1.将C:\Program Files\Splunk\etc\splunk-launch.conf文件更改配置<br>  2.将其中的# SPLUNK_DB=C:\Program Files\Splunk\var\lib\splunk<br>    “=”后面的路径改成自己想要的路径，splunk以后 new index的时候index会<br>    自动创建在这个路径下。<br>  3.cmd 命令 stop splunk ，更改完conf文件之后，start splunk ，会发现<br>    splunk之前所有的index都在你所更改的路径下创建了，并且以后新建的index<br>     也在此路径下。（ cmd cd命令进入splunk的bin 使用.\splunk stop 和start进行<br>    停止重启splunk）<br>方法二：<br>    1.在index想要存放的路径下创建同名index文件夹（包含db colddb thaweddb三个<br>    文件），把splunk C盘中的数据考到这三个文件对应的文件中来，<br>    2.在splunk web 删除这个index  与此同时新建这个index（同名）此时把路径换成<br>    我们创建的目录，<br>    3.重启splunk ，index一摸一样的存到的别的盘（或者是目录下）。<br>    4.缺点是 在splunk web创建index的时候，即使db colddb thaweddb文件创建在了<br>    我们指定的位置，但是Splunk\var\lib\splunk下依旧会创建一个同名的index但是里面<br>    只有一个文件 datamodul_summary文件。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;将splunk的index存到别的盘&quot;&gt;&lt;a href=&quot;#将splunk的index存到别的盘&quot; class=&quot;headerlink&quot; title=&quot;将splunk的index存到别的盘&quot;&gt;&lt;/a&gt;将splunk的index存到别的盘&lt;/h2&gt;&lt;p&gt;方法一：更改</summary>
+      
+    
+    
+    
+    
+    <category term="splunk" scheme="http://zlincredible.com/tags/splunk/"/>
+    
+    <category term="index" scheme="http://zlincredible.com/tags/index/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>shell脚本</title>
+    <link href="http://zlincredible.com/2020/10/20/shell-jiao-ben/"/>
+    <id>http://zlincredible.com/2020/10/20/shell-jiao-ben/</id>
+    <published>2020-10-20T09:40:24.000Z</published>
+    <updated>2021-03-23T15:51:58.284Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="shell脚本"><a href="#shell脚本" class="headerlink" title="shell脚本"></a>shell脚本</h2><h3 id="解释说明"><a href="#解释说明" class="headerlink" title="解释说明"></a>解释说明</h3><p>target=ICT09010<br>str_I=I<br>定义变量 引用的时候用$加变量名</p><p>focus_line=<code>cip dn                           |grep $target             |sed &#39;s/)/)@/g&#39;                       |sed &#39;s/@/\n/g&#39;               |grep $target     |grep -o &#39;(.*)&#39; </code><br>赋值变量     这个命令会出一段结果               过滤出带变量名的那一行     为了不损害括号，给括号后面加一个@符号     把@符号置换成换行符            取到带变量的新行    取到括号里的东(带括号)<br>（上一行很长请右滑）<br>result=$(echo $focus_line | grep “${str_I}”)<br>判断后面的变量是否在括号里并返回值。<br>if [[ “$result” != “” ]]<br>then<br>    echo “HAVE I”<br>else<br>    echo “NOT HAVE I”<br>fi<br>如果括号里有I则输出HAVE I</p><h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><pre class=" language-bash"><code class="language-bash">target<span class="token operator">=</span>ICT09010str_I<span class="token operator">=</span>Ifocus_line<span class="token operator">=</span>`cip dn <span class="token operator">|</span><span class="token function">grep</span> <span class="token variable">$target</span><span class="token operator">|</span><span class="token function">sed</span> <span class="token string">'s/)/)@/g'</span><span class="token operator">|</span><span class="token function">sed</span> <span class="token string">'s/@/\n/g'</span><span class="token operator">|</span><span class="token function">grep</span> <span class="token variable">$target</span><span class="token operator">|</span><span class="token function">grep</span> -o <span class="token string">'(.*)'</span> `result<span class="token operator">=</span><span class="token punctuation">$(</span>echo <span class="token variable">$focus_line</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">"$&amp;#123;str_I&amp;#125;"</span><span class="token punctuation">)</span><span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$result</span>"</span> <span class="token operator">!=</span> <span class="token string">""</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token keyword">then</span>    <span class="token keyword">echo</span> <span class="token string">"HAVE I"</span><span class="token keyword">else</span>    <span class="token keyword">echo</span> <span class="token string">"NOT HAVE I"</span><span class="token keyword">fi</span></code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;shell脚本&quot;&gt;&lt;a href=&quot;#shell脚本&quot; class=&quot;headerlink&quot; title=&quot;shell脚本&quot;&gt;&lt;/a&gt;shell脚本&lt;/h2&gt;&lt;h3 id=&quot;解释说明&quot;&gt;&lt;a href=&quot;#解释说明&quot; class=&quot;headerlink&quot; titl</summary>
+      
+    
+    
+    
+    
+    <category term="shell" scheme="http://zlincredible.com/tags/shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>splunk的lisence</title>
+    <link href="http://zlincredible.com/2020/10/11/splunk-de-lisence/"/>
+    <id>http://zlincredible.com/2020/10/11/splunk-de-lisence/</id>
+    <published>2020-10-11T15:40:24.000Z</published>
+    <updated>2021-03-23T15:48:51.928Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="splunk的lisence"><a href="#splunk的lisence" class="headerlink" title="splunk的lisence"></a>splunk的lisence</h2><h3 id="在这个文件夹的路径下依次执行如下命令："><a href="#在这个文件夹的路径下依次执行如下命令：" class="headerlink" title="在这个文件夹的路径下依次执行如下命令："></a>在这个文件夹的路径下依次执行如下命令：</h3><pre class=" language-bash"><code class="language-bash"><span class="token operator">&lt;</span>?xml version<span class="token operator">=</span><span class="token string">"1.0"</span> encoding<span class="token operator">=</span><span class="token string">"UTF-8"</span>?<span class="token operator">></span><span class="token operator">&lt;</span>license<span class="token operator">></span>  <span class="token operator">&lt;</span>signature<span class="token operator">></span>Lq2bDetPfsTrK0Shxxpl77nMJqmt5xXzrcvz7F76+zdSYshYqJNZWjLI4qu7w1R3oMka/K7h3V7jn04NpY84VryzJKAWYoI+LmjIbV0M7FdUKJQq3XqK6XfMMIaQNCvd2AVRDmPqO9GvfGYpGJE5LBpkGpvSD4s9vzcd7BUJadYvj1zSKk8g5dNc31vOhfFjRM9Mm2Y408Jxs5vIqmIgyXOaFPJ+e0r9lKwmL89sHPxxhssIzE5rdjAnDK2S9fceH/Gn6O0+cyEqEWe1J81sUPsZiwzw6CNrm+ET93I92ZqH4l7nf9jNTm1F2SRQE+jOmiCzI1SJ5+VieHFln6k4rg<span class="token operator">==</span><span class="token operator">&lt;</span>/signature<span class="token operator">></span>  <span class="token operator">&lt;</span>payload<span class="token operator">></span>    <span class="token operator">&lt;</span>type<span class="token operator">></span>enterprise<span class="token operator">&lt;</span>/type<span class="token operator">></span>    <span class="token operator">&lt;</span>group_id<span class="token operator">></span>Enterprise<span class="token operator">&lt;</span>/group_id<span class="token operator">></span>    <span class="token operator">&lt;</span>quota<span class="token operator">></span>21474836480<span class="token operator">&lt;</span>/quota<span class="token operator">></span>    <span class="token operator">&lt;</span>max_violations<span class="token operator">></span>5<span class="token operator">&lt;</span>/max_violations<span class="token operator">></span>    <span class="token operator">&lt;</span>window_period<span class="token operator">></span>30<span class="token operator">&lt;</span>/window_period<span class="token operator">></span>    <span class="token operator">&lt;</span>creation_time<span class="token operator">></span>1603522800<span class="token operator">&lt;</span>/creation_time<span class="token operator">></span>    <span class="token operator">&lt;</span>label<span class="token operator">></span>Splunk Enterprise Term License - No Enforcement <span class="token punctuation">(</span>6.5 <span class="token punctuation">)</span><span class="token operator">&lt;</span>/label<span class="token operator">></span>    <span class="token operator">&lt;</span>expiration_time<span class="token operator">></span>1635058799<span class="token operator">&lt;</span>/expiration_time<span class="token operator">></span>    <span class="token operator">&lt;</span>features<span class="token operator">></span>      <span class="token operator">&lt;</span>feature<span class="token operator">></span>Auth<span class="token operator">&lt;</span>/feature<span class="token operator">></span>      <span class="token operator">&lt;</span>feature<span class="token operator">></span>FwdData<span class="token operator">&lt;</span>/feature<span class="token operator">></span>      <span class="token operator">&lt;</span>feature<span class="token operator">></span>RcvData<span class="token operator">&lt;</span>/feature<span class="token operator">></span>      <span class="token operator">&lt;</span>feature<span class="token operator">></span>LocalSearch<span class="token operator">&lt;</span>/feature<span class="token operator">></span>      <span class="token operator">&lt;</span>feature<span class="token operator">></span>DistSearch<span class="token operator">&lt;</span>/feature<span class="token operator">></span>      <span class="token operator">&lt;</span>feature<span class="token operator">></span>RcvSearch<span class="token operator">&lt;</span>/feature<span class="token operator">></span>      <span class="token operator">&lt;</span>feature<span class="token operator">></span>ScheduledSearch<span class="token operator">&lt;</span>/feature<span class="token operator">></span>      <span class="token operator">&lt;</span>feature<span class="token operator">></span>Alerting<span class="token operator">&lt;</span>/feature<span class="token operator">></span>      <span class="token operator">&lt;</span>feature<span class="token operator">></span>DeployClient<span class="token operator">&lt;</span>/feature<span class="token operator">></span>      <span class="token operator">&lt;</span>feature<span class="token operator">></span>DeployServer<span class="token operator">&lt;</span>/feature<span class="token operator">></span>      <span class="token operator">&lt;</span>feature<span class="token operator">></span>SplunkWeb<span class="token operator">&lt;</span>/feature<span class="token operator">></span>      <span class="token operator">&lt;</span>feature<span class="token operator">></span>SigningProcessor<span class="token operator">&lt;</span>/feature<span class="token operator">></span>      <span class="token operator">&lt;</span>feature<span class="token operator">></span>SyslogOutputProcessor<span class="token operator">&lt;</span>/feature<span class="token operator">></span>      <span class="token operator">&lt;</span>feature<span class="token operator">></span>CanBeRemoteMaster<span class="token operator">&lt;</span>/feature<span class="token operator">></span>    <span class="token operator">&lt;</span>/features<span class="token operator">></span>    <span class="token operator">&lt;</span>optional_features<span class="token operator">></span>      <span class="token operator">&lt;</span>feature<span class="token operator">></span>DisableQuotaEnforcement<span class="token operator">&lt;</span>/feature<span class="token operator">></span>    <span class="token operator">&lt;</span>/optional_features<span class="token operator">></span>    <span class="token operator">&lt;</span>sourcetypes/<span class="token operator">></span>    <span class="token operator">&lt;</span>guid<span class="token operator">></span>6091F182-0286-47F5-B634-8CEB2FCB0852<span class="token operator">&lt;</span>/guid<span class="token operator">></span>  <span class="token operator">&lt;</span>/payload<span class="token operator">></span><span class="token operator">&lt;</span>/license<span class="token operator">></span></code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;splunk的lisence&quot;&gt;&lt;a href=&quot;#splunk的lisence&quot; class=&quot;headerlink&quot; title=&quot;splunk的lisence&quot;&gt;&lt;/a&gt;splunk的lisence&lt;/h2&gt;&lt;h3 id=&quot;在这个文件夹的路径下依次执行如下命</summary>
+      
+    
+    
+    
+    
+    <category term="splunk" scheme="http://zlincredible.com/tags/splunk/"/>
+    
+    <category term="lisence" scheme="http://zlincredible.com/tags/lisence/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>两个静态页面传递动态参数</title>
+    <link href="http://zlincredible.com/2020/10/01/liang-ge-jing-tai-ye-mian-chuan-di-dong-tai-can-shu/"/>
+    <id>http://zlincredible.com/2020/10/01/liang-ge-jing-tai-ye-mian-chuan-di-dong-tai-can-shu/</id>
+    <published>2020-10-01T05:44:15.000Z</published>
+    <updated>2021-03-23T16:17:26.673Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="本文来介绍如何在两个静态页面之间传递一个或者多个动态的参数（方法一）。"><a href="#本文来介绍如何在两个静态页面之间传递一个或者多个动态的参数（方法一）。" class="headerlink" title="本文来介绍如何在两个静态页面之间传递一个或者多个动态的参数（方法一）。"></a>本文来介绍如何在两个静态页面之间传递一个或者多个动态的参数（方法一）。</h3><p><strong>通过URL传参</strong></p><p><strong>思路：</strong></p><p>假定两个页面A和B，我们通过点击A页面的一个按钮链接跳转到B，A页面的链接上携带了一个参数，到B页面通过JS取到参数上携带的值。</p><p><strong>A页面代码：</strong></p><pre class=" language-bash"><code class="language-bash"><span class="token operator">&lt;</span>html<span class="token operator">></span>  <span class="token operator">&lt;</span>form<span class="token operator">></span>    <span class="token operator">&lt;</span>div<span class="token operator">></span>      <span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"https://www.ABC.com/CCC?form.参数=100（值）"</span><span class="token operator">></span>跳转按钮<span class="token operator">&lt;</span>/a<span class="token operator">></span>    <span class="token operator">&lt;</span>/div<span class="token operator">></span>  <span class="token operator">&lt;</span>/form<span class="token operator">></span><span class="token operator">&lt;</span>/html<span class="token operator">></span></code></pre><p><strong>我们此时只需在B页面写个JS如下便可以取到参数：</strong></p><pre class=" language-bash"><code class="language-bash"><span class="token keyword">function</span> getUrlParam<span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>                var reg <span class="token operator">=</span> new RegExp<span class="token punctuation">(</span><span class="token string">"(^|&amp;)"</span> + name + <span class="token string">"=([^&amp;]*)(&amp;|$)"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                var r <span class="token operator">=</span> window.location.search.substr<span class="token punctuation">(</span>1<span class="token punctuation">)</span>.match<span class="token punctuation">(</span>reg<span class="token punctuation">)</span><span class="token punctuation">;</span>                 <span class="token keyword">if</span> <span class="token punctuation">(</span>r <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token keyword">return</span> unescape<span class="token punctuation">(</span>r<span class="token punctuation">[</span>2<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                <span class="token keyword">return</span> null<span class="token punctuation">;</span>             <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>            var x1 <span class="token operator">=</span> getUrlParam<span class="token punctuation">(</span><span class="token string">'参数'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token keyword">if</span> <span class="token punctuation">(</span>x1 <span class="token operator">==</span><span class="token operator">=</span> <span class="token string">"Customer Focus"</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>                 document.getElementById<span class="token punctuation">(</span><span class="token string">"c"</span><span class="token punctuation">)</span>.click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125; </span></code></pre><p><strong>这里我们使用到了正则表达式，匹配URL中的传过来的参数，取到了值便可以进行操作了，我做的操作是让id为c的进行点击操作</strong><br><strong>当然不要忘了应用的时候注意粗心大意的问题，例如link写完导入的JS文件。</strong></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;本文来介绍如何在两个静态页面之间传递一个或者多个动态的参数（方法一）。&quot;&gt;&lt;a href=&quot;#本文来介绍如何在两个静态页面之间传递一个或者多个动态的参数（方法一）。&quot; class=&quot;headerlink&quot; title=&quot;本文来介绍如何在两个静态页面之间传递一个或者</summary>
+      
+    
+    
+    
+    
+    <category term="JavaScript" scheme="http://zlincredible.com/tags/JavaScript/"/>
+    
+    <category term="HTML5" scheme="http://zlincredible.com/tags/HTML5/"/>
+    
+    <category term="正则表达式" scheme="http://zlincredible.com/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>React——1</title>
+    <link href="http://zlincredible.com/2020/09/20/react-xue-xi-1/"/>
+    <id>http://zlincredible.com/2020/09/20/react-xue-xi-1/</id>
+    <published>2020-09-20T09:40:24.000Z</published>
+    <updated>2021-03-25T13:27:08.244Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="React-1"><a href="#React-1" class="headerlink" title="React-1"></a>React-1</h2><h3 id=""><a href="#" class="headerlink" title=""></a></h3><pre class=" language-bash"><code class="language-bash">ssh-keygen -t rsa -f ~/.ssh/mykey -C <span class="token string">"zelin.yao@accenture.com"</span></code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;React-1&quot;&gt;&lt;a href=&quot;#React-1&quot; class=&quot;headerlink&quot; title=&quot;React-1&quot;&gt;&lt;/a&gt;React-1&lt;/h2&gt;&lt;h3 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a</summary>
+      
+    
+    
+    
+    
+    <category term="react" scheme="http://zlincredible.com/tags/react/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>生成shh的key</title>
+    <link href="http://zlincredible.com/2020/09/20/sheng-cheng-shh-de-key/"/>
+    <id>http://zlincredible.com/2020/09/20/sheng-cheng-shh-de-key/</id>
+    <published>2020-09-20T09:40:24.000Z</published>
+    <updated>2021-03-23T15:46:21.299Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="生成shh的key"><a href="#生成shh的key" class="headerlink" title="生成shh的key"></a>生成shh的key</h2><pre class=" language-bash"><code class="language-bash">ssh-keygen -t rsa -f ~/.ssh/mykey -C <span class="token string">"zelin.yao@accenture.com"</span></code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;生成shh的key&quot;&gt;&lt;a href=&quot;#生成shh的key&quot; class=&quot;headerlink&quot; title=&quot;生成shh的key&quot;&gt;&lt;/a&gt;生成shh的key&lt;/h2&gt;&lt;pre class=&quot; language-bash&quot;&gt;&lt;code class=&quot;lang</summary>
+      
+    
+    
+    
+    
+    <category term="ssh" scheme="http://zlincredible.com/tags/ssh/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>splunk后台添加user账号cmd进入splunk的bin目录下执行后重启splunk</title>
+    <link href="http://zlincredible.com/2020/08/20/splunk-hou-tai-tian-jia-user-zhang-hao-cmd-jin-ru-splunk-de-bin-mu-lu-xia-zhi-xing-hou-chong-qi-splunk/"/>
+    <id>http://zlincredible.com/2020/08/20/splunk-hou-tai-tian-jia-user-zhang-hao-cmd-jin-ru-splunk-de-bin-mu-lu-xia-zhi-xing-hou-chong-qi-splunk/</id>
+    <published>2020-08-20T09:40:24.000Z</published>
+    <updated>2021-03-23T16:07:38.721Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="splunk后台添加user账号cmd进入splunk的bin目录下执行后重启splunk"><a href="#splunk后台添加user账号cmd进入splunk的bin目录下执行后重启splunk" class="headerlink" title="splunk后台添加user账号cmd进入splunk的bin目录下执行后重启splunk"></a>splunk后台添加user账号cmd进入splunk的bin目录下执行后重启splunk</h2><pre class=" language-bash"><code class="language-bash">splunk cmd splunkd rest --noauth POST /services/authentication/users <span class="token string">"name=shun.zhou&amp;password=shunzhou&amp;roles=admin"</span> </code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;splunk后台添加user账号cmd进入splunk的bin目录下执行后重启splunk&quot;&gt;&lt;a href=&quot;#splunk后台添加user账号cmd进入splunk的bin目录下执行后重启splunk&quot; class=&quot;headerlink&quot; title=&quot;sp</summary>
+      
+    
+    
+    
+    
+    <category term="splunk" scheme="http://zlincredible.com/tags/splunk/"/>
+    
+    <category term="user" scheme="http://zlincredible.com/tags/user/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>命令</title>
+    <link href="http://zlincredible.com/2020/08/20/ming-ling/"/>
+    <id>http://zlincredible.com/2020/08/20/ming-ling/</id>
+    <published>2020-08-20T09:40:24.000Z</published>
+    <updated>2021-03-23T16:06:05.234Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h2><pre class=" language-bash"><code class="language-bash">压缩命令  ：tar -zcvf /压缩完的路径以及名称/aeon_ui.tar.gz /被压缩文件位置/    </code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;命令&quot;&gt;&lt;a href=&quot;#命令&quot; class=&quot;headerlink&quot; title=&quot;命令&quot;&gt;&lt;/a&gt;命令&lt;/h2&gt;&lt;pre class=&quot; language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;压缩命令  ：tar -zcvf </summary>
+      
+    
+    
+    
+    
+    <category term="命令" scheme="http://zlincredible.com/tags/%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>splunk开机自启动</title>
+    <link href="http://zlincredible.com/2020/01/20/splunk-kai-ji-zi-qi-dong/"/>
+    <id>http://zlincredible.com/2020/01/20/splunk-kai-ji-zi-qi-dong/</id>
+    <published>2020-01-20T09:11:24.000Z</published>
+    <updated>2021-11-04T03:46:48.407Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="splunk开机自启动"><a href="#splunk开机自启动" class="headerlink" title="splunk开机自启动"></a>splunk开机自启动</h2><pre class=" language-bash"><code class="language-bash"><span class="token punctuation">[</span>sudo<span class="token punctuation">]</span> <span class="token variable">$SPLUNK_HOME</span>/bin/    ./splunk <span class="token function">enable</span> boot-start </code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;splunk开机自启动&quot;&gt;&lt;a href=&quot;#splunk开机自启动&quot; class=&quot;headerlink&quot; title=&quot;splunk开机自启动&quot;&gt;&lt;/a&gt;splunk开机自启动&lt;/h2&gt;&lt;pre class=&quot; language-bash&quot;&gt;&lt;code cla</summary>
+      
+    
+    
+    
+    
+    <category term="splunk" scheme="http://zlincredible.com/tags/splunk/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>docker安装</title>
+    <link href="http://zlincredible.com/2020/01/01/docker-an-zhuang/"/>
+    <id>http://zlincredible.com/2020/01/01/docker-an-zhuang/</id>
+    <published>2020-01-01T09:10:24.000Z</published>
+    <updated>2021-03-23T15:41:05.802Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="docker安装"><a href="#docker安装" class="headerlink" title="docker安装"></a>docker安装</h2><h3 id="控制面板-gt-程序-gt-启用或关闭Windows功能-gt-把Hyper-v勾上-gt-重启电脑"><a href="#控制面板-gt-程序-gt-启用或关闭Windows功能-gt-把Hyper-v勾上-gt-重启电脑" class="headerlink" title="控制面板-&gt;程序-&gt;启用或关闭Windows功能-&gt;把Hyper-v勾上-&gt;重启电脑"></a>控制面板-&gt;程序-&gt;启用或关闭Windows功能-&gt;把Hyper-v勾上-&gt;重启电脑</h3><h3 id="重启之后打开任务管理器，点性能，发现cpu已经虚拟化了"><a href="#重启之后打开任务管理器，点性能，发现cpu已经虚拟化了" class="headerlink" title="重启之后打开任务管理器，点性能，发现cpu已经虚拟化了"></a>重启之后打开任务管理器，点性能，发现cpu已经虚拟化了</h3><h3 id="打开链接-https-docs-docker-com-docker-for-windows-install-download-docker-for-windows"><a href="#打开链接-https-docs-docker-com-docker-for-windows-install-download-docker-for-windows" class="headerlink" title="打开链接 https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows"></a>打开链接 <a href="https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows">https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows</a></h3><h3 id="安装完后打开powershell，执行docker-–version"><a href="#安装完后打开powershell，执行docker-–version" class="headerlink" title="安装完后打开powershell，执行docker –version"></a>安装完后打开powershell，执行docker –version</h3><h3 id="进入链接-https-docs-microsoft-com-en-us-windows-wsl-install-win10-step-4-download-the-linux-kernel-update-package"><a href="#进入链接-https-docs-microsoft-com-en-us-windows-wsl-install-win10-step-4-download-the-linux-kernel-update-package" class="headerlink" title="进入链接 https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package"></a>进入链接 <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package">https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package</a></h3><h3 id="将上面下载的msi文件所在的文件夹，右键管理员权限这个msi文件。"><a href="#将上面下载的msi文件所在的文件夹，右键管理员权限这个msi文件。" class="headerlink" title="将上面下载的msi文件所在的文件夹，右键管理员权限这个msi文件。"></a>将上面下载的msi文件所在的文件夹，右键管理员权限这个msi文件。</h3>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;docker安装&quot;&gt;&lt;a href=&quot;#docker安装&quot; class=&quot;headerlink&quot; title=&quot;docker安装&quot;&gt;&lt;/a&gt;docker安装&lt;/h2&gt;&lt;h3 id=&quot;控制面板-gt-程序-gt-启用或关闭Windows功能-gt-把Hyper-v勾</summary>
+      
+    
+    
+    
+    
+    <category term="docker" scheme="http://zlincredible.com/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>batch</title>
+    <link href="http://zlincredible.com/2019/11/11/batch/"/>
+    <id>http://zlincredible.com/2019/11/11/batch/</id>
+    <published>2019-11-11T09:10:24.000Z</published>
+    <updated>2021-03-23T16:01:19.295Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="batch说明"><a href="#batch说明" class="headerlink" title="batch说明"></a>batch说明</h2><p>更改txt文件后缀名为bat 即可创建bat文件</p><p>实例：</p><p>@ECHO OFF<br>TITLE INDEX——backup<br>echo ———————————-<br>echo=<br>echo=<br>del /q /s C:\indexbackup\tmp*.*</p><p>md C:\indexbackup\tmp\idx_dwh_session</p><p>set a=”C:\Program Files\Splunk\var\lib\splunk\idx_dwh_session”<br>Xcopy %a% C:\indexbackup\tmp\idx_dwh_session /e /y</p><p>PowerShell Compress-Archive -Path C:\indexbackup\tmp\idx_dwh_session -Force -DestinationPath C:\indexbackup\idx_dwh_session.zip</p><p>del /q /s c:\indexbackup\index*.*</p><p>set b=”C:\indexbackup\tmp\idx_dwh_session.zip”<br>xcopy %b% c:\indexbackup\index /e /y</p><p>rmdir /q /s C:\indexbackup\tmp*.*</p><p>echo=<br>echo=<br>echo —————-succeed——————<br>PAUSE</p><p>其中/e /y 表示执行xcopy的时候创建目录树，空文件也copy</p><pre><code>/q /s 表示 执行过程中不提示是否删除 当echo设置off值的时候，那么下面的指令都将只执行而不显示，当再次出现echo on时下面的语句才为可见的（回显）。echo通常和@一起使用，@放在echo的前面，即是 @echo，作用是让@后面的句子不显示出来，而@本身也是不显示的，那么通过 @echo off 可达到不显示任何信息的效果del  C:\indexbackup\tmp\*.* 代表删除tmp文件夹下的所有文件，不包括文件夹。rmdir 也是删除的意思  但是删除的是目录树   而上面的del删除的是到最底的文件却不包括文件夹 set b=&quot;C:\indexbackup\tmp\idx_dwh_session.zip&quot; 是设置参数，%b%就可以调用。md C:\indexbackup\tmp\idx_dwh_session  表示在指定路径tmp下创建idx_dwh_session 文件夹</code></pre><p>   PowerShell Compress-Archive -Path -DestinationPath  是压缩命令 但是要看电脑版本  例如win7就不行。</p><p>实例二：</p><p>@echo off<br>del /q /s C:\indexbackup\tmp*.*<br>setlocal enabledelayedexpansion<br>for /f “tokens=* delims=”  %%i in (C:\indexbackup\session_name.txt)  do (<br>set target=%%i<br>echo !target!<br>PowerShell Compress-Archive -Path D:\splunk_db!target! -Force -DestinationPath C:\indexbackup\tmp!target!.zip<br>)<br>del /q /s C:\indexbackup\index*.*<br>xcopy C:\indexbackup\tmp C:\indexbackup\index /e /y<br>del /q /s C:\indexbackup\tmp*.*</p><p>其中for /f “tokens=* delims=”  %%i in (C:\session_name.txt)  do (echo !target!)是一个循环，从txt文件读取写好的index名，当作变量放进程序后面的路径里。<br>PowerShell Compress-Archive -Path D:\splunk_db!target! -Force -DestinationPath C:\indexbackup\tmp!target!.zip  注意其中的变量引用。</p><p>实例三：</p><p>@echo off<br>set target=’’<br>setlocal enabledelayedexpansion<br>(for /f “tokens=2 delims==” %%i in (‘findstr /n /i “AUTO_ID” C:\abc\read.txt’) do set /a target=%%i)<br>echo !target!<br>pause&gt;nul</p><p>从一个文件夹C:\abc\read.txt中取到一个键值对的数字值<br>其中 delims== 是按照等号一行划分成两列；  tokens=2的意思是取第二列的值。<br>      findstr /n /i “AUTO_ID”是 从C:\abc\read.txt中匹配到这行。/n 的意思是输出是第几行，/i的意思是不区分大小写。</p><h3 id="实例1"><a href="#实例1" class="headerlink" title="实例1"></a>实例1</h3><pre class=" language-bash"><code class="language-bash">@echo offdel /q /s C:\Users\zelin.yao\Desktop\C\indexbackup\tmp\*.*setlocal enabledelayedexpansion<span class="token keyword">for</span> /f <span class="token string">"tokens=* delims="</span>  %%i <span class="token keyword">in</span> <span class="token punctuation">(</span>C:\Users\zelin.yao\Desktop\C\indexbackup\indexname.txt<span class="token punctuation">)</span>  <span class="token keyword">do</span> <span class="token punctuation">(</span><span class="token keyword">set</span> target<span class="token operator">=</span>%%i<span class="token keyword">echo</span> <span class="token operator">!</span>target<span class="token operator">!</span>PowerShell Compress-Archive -Path C:\Users\zelin.yao\Desktop\D\splunk_db\<span class="token operator">!</span>target<span class="token operator">!</span> -Force -DestinationPath C:\Users\zelin.yao\Desktop\C\indexbackup\tmp\<span class="token operator">!</span>target<span class="token operator">!</span>.zip<span class="token punctuation">)</span>  del /q /s C:\Users\zelin.yao\Desktop\C\indexbackup\index\*.*xcopy C:\Users\zelin.yao\Desktop\C\indexbackup\tmp C:\Users\zelin.yao\Desktop\C\indexbackup\index /e /ydel /q /s C:\Users\zelin.yao\Desktop\C\indexbackup\tmp\*.*</code></pre><h3 id="实例2"><a href="#实例2" class="headerlink" title="实例2"></a>实例2</h3><pre class=" language-bash"><code class="language-bash">@echo off<span class="token keyword">set</span> target<span class="token operator">=</span><span class="token string">''</span>setlocal enabledelayedexpansion<span class="token punctuation">(</span>for /f <span class="token string">"tokens=2 delims=="</span> %%i <span class="token keyword">in</span> <span class="token punctuation">(</span><span class="token string">'findstr /n /i "AUTOID" C:\abc\read.txt'</span><span class="token punctuation">)</span> <span class="token keyword">do</span> <span class="token keyword">set</span> /a target<span class="token operator">=</span>%%i<span class="token punctuation">)</span><span class="token keyword">echo</span> <span class="token operator">!</span>target<span class="token operator">!</span>pause<span class="token operator">></span>nul</code></pre><h3 id="实例3"><a href="#实例3" class="headerlink" title="实例3"></a>实例3</h3><pre class=" language-bash"><code class="language-bash">del /q /s C:\indexbackup\tmp\*.*PowerShell Compress-Archive -Path D:\splunk_db\idx_dwh_session -Force -DestinationPath C:\indexbackup\tmp\idx_dwh_session.zipPowerShell Compress-Archive -Path D:\splunk_db\idx_bis_session -Force -DestinationPath C:\indexbackup\tmp\idx_bis_session.zipPowerShell Compress-Archive -Path D:\splunk_db\idx_bizmin_session -Force -DestinationPath C:\indexbackup\tmp\idx_bizmin_session.zipdel /q /s C:\indexbackup\index\*.*xcopy C:\indexbackup\tmp C:\indexbackup\index /e /ydel /q /s C:\indexbackup\tmp\*.*</code></pre><h3 id="实例4"><a href="#实例4" class="headerlink" title="实例4"></a>实例4</h3><pre class=" language-bash"><code class="language-bash">@echo off<span class="token keyword">set</span> split<span class="token operator">=</span>-<span class="token keyword">set</span> datetimesplit<span class="token operator">=</span> setlocal enabledelayedexpansion<span class="token keyword">for</span> /f <span class="token string">"tokens=1,2,3,4,*"</span> %%i <span class="token keyword">in</span> <span class="token punctuation">(</span><span class="token string">'reg query "HKCU\Control Panel\International" ^| find /i "sShortDate"'</span><span class="token punctuation">)</span> <span class="token keyword">do</span> SET <span class="token string">"dateformat=%%k"</span> IF <span class="token string">"%dateformat%"</span> <span class="token operator">==</span> <span class="token string">"M/d/yyyy"</span>   <span class="token keyword">set</span> A_DATE<span class="token operator">=</span>%date:~6,4%%split%%date:~0,2%%split%%date:~3,2%IF <span class="token string">"%dateformat%"</span> <span class="token operator">==</span> <span class="token string">"M/d/yy"</span>     <span class="token keyword">set</span> A_DATE<span class="token operator">=</span>20%date:~6,2%%split%%date:~0,2%%split%%date:~3,2%IF <span class="token string">"%dateformat%"</span> <span class="token operator">==</span> <span class="token string">"MM/dd/yy"</span>   <span class="token keyword">set</span> A_DATE<span class="token operator">=</span>20%date:~6,2%%split%%date:~0,2%%split%%date:~3,2%IF <span class="token string">"%dateformat%"</span> <span class="token operator">==</span> <span class="token string">"MM/dd/yyyy"</span> <span class="token keyword">set</span> A_DATE<span class="token operator">=</span>%date:~6,4%%split%%date:~0,2%%split%%date:~3,2%IF <span class="token string">"%dateformat%"</span> <span class="token operator">==</span> <span class="token string">"yy/MM/dd"</span>   <span class="token keyword">set</span> A_DATE<span class="token operator">=</span>20%date:~0,2%%split%%date:~3,2%%split%%date:~6,2%IF <span class="token string">"%dateformat%"</span> <span class="token operator">==</span> <span class="token string">"yyyy-MM-dd"</span> <span class="token keyword">set</span> A_DATE<span class="token operator">=</span>%date:~0,4%%split%%date:~5,2%%split%%date:~8,2%IF <span class="token string">"%dateformat%"</span> <span class="token operator">==</span> <span class="token string">"dd-MMM-yy"</span>  <span class="token keyword">set</span> A_DATE<span class="token operator">=</span>20%date:~7,2%%split%%date:~3,3%%split%%date:~0,2%<span class="token keyword">set</span> A_NOW<span class="token operator">=</span>%A_DATE%%datetimesplit%%time:~0,2%%split%%time:~3,2%%split%%time:~6,2%<span class="token keyword">echo</span> %cd%-------------1<span class="token function">cd</span> C:\mywizard-aiops----ntt-phase2<span class="token function">git</span> pull<span class="token keyword">echo</span> %cd%-------------2<span class="token function">rmdir</span> /s /q C:\mywizard-aiops----ntt-phase2\splunk\sala\<span class="token function">cd</span> C:\mywizard-aiops----ntt-phase2\splunk<span class="token keyword">echo</span> %cd%-------------3<span class="token function">mkdir</span> sala<span class="token function">cd</span> C:\<span class="token operator">!</span>target<span class="token operator">!</span>\Splunk\etc\apps\sala<span class="token keyword">echo</span> %cd%-------------4xcopy C:\<span class="token string">"Program Files"</span>\Splunk\etc\apps\sala C:\mywizard-aiops----ntt-phase2\splunk\sala /e /y<span class="token function">git</span> add <span class="token keyword">.</span><span class="token function">git</span> commit -m <span class="token string">"%A_NOW%"</span><span class="token function">git</span> push pause</code></pre><h3 id="实例5"><a href="#实例5" class="headerlink" title="实例5"></a>实例5</h3><pre class=" language-bash"><code class="language-bash">@echo off<span class="token keyword">set</span> split<span class="token operator">=</span>-<span class="token keyword">set</span> datetimesplit<span class="token operator">=</span> setlocal enabledelayedexpansion<span class="token keyword">for</span> /f <span class="token string">"tokens=1,2,3,4,*"</span> %%i <span class="token keyword">in</span> <span class="token punctuation">(</span><span class="token string">'reg query "HKCU\Control Panel\International" ^| find /i "sShortDate"'</span><span class="token punctuation">)</span> <span class="token keyword">do</span> SET <span class="token string">"dateformat=%%k"</span> IF <span class="token string">"%dateformat%"</span> <span class="token operator">==</span> <span class="token string">"M/d/yyyy"</span>   <span class="token keyword">set</span> A_DATE<span class="token operator">=</span>%date:~6,4%%split%%date:~0,2%%split%%date:~3,2%IF <span class="token string">"%dateformat%"</span> <span class="token operator">==</span> <span class="token string">"M/d/yy"</span>     <span class="token keyword">set</span> A_DATE<span class="token operator">=</span>20%date:~6,2%%split%%date:~0,2%%split%%date:~3,2%IF <span class="token string">"%dateformat%"</span> <span class="token operator">==</span> <span class="token string">"MM/dd/yy"</span>   <span class="token keyword">set</span> A_DATE<span class="token operator">=</span>20%date:~6,2%%split%%date:~0,2%%split%%date:~3,2%IF <span class="token string">"%dateformat%"</span> <span class="token operator">==</span> <span class="token string">"MM/dd/yyyy"</span> <span class="token keyword">set</span> A_DATE<span class="token operator">=</span>%date:~6,4%%split%%date:~0,2%%split%%date:~3,2%IF <span class="token string">"%dateformat%"</span> <span class="token operator">==</span> <span class="token string">"yy/MM/dd"</span>   <span class="token keyword">set</span> A_DATE<span class="token operator">=</span>20%date:~0,2%%split%%date:~3,2%%split%%date:~6,2%IF <span class="token string">"%dateformat%"</span> <span class="token operator">==</span> <span class="token string">"yyyy-MM-dd"</span> <span class="token keyword">set</span> A_DATE<span class="token operator">=</span>%date:~0,4%%split%%date:~5,2%%split%%date:~8,2%IF <span class="token string">"%dateformat%"</span> <span class="token operator">==</span> <span class="token string">"dd-MMM-yy"</span>  <span class="token keyword">set</span> A_DATE<span class="token operator">=</span>20%date:~7,2%%split%%date:~3,3%%split%%date:~0,2%<span class="token keyword">set</span> A_NOW<span class="token operator">=</span>%A_DATE%%datetimesplit%%time:~0,2%%split%%time:~3,2%%split%%time:~6,2%<span class="token keyword">echo</span> %cd%-------------1<span class="token function">cd</span> C:\mywizard-aiops----ntt-phase2<span class="token function">git</span> pull<span class="token keyword">echo</span> %cd%-------------2<span class="token function">rmdir</span> /s /q C:\mywizard-aiops----ntt-phase2\splunk\sala\<span class="token function">cd</span> C:\mywizard-aiops----ntt-phase2\splunk<span class="token keyword">echo</span> %cd%-------------3<span class="token function">mkdir</span> sala<span class="token function">cd</span> C:\<span class="token operator">!</span>target<span class="token operator">!</span>\Splunk\etc\apps\sala<span class="token keyword">echo</span> %cd%-------------4xcopy C:\<span class="token string">"Program Files"</span>\Splunk\etc\apps\sala C:\mywizard-aiops----ntt-phase2\splunk\sala /e /y<span class="token function">git</span> add <span class="token keyword">.</span><span class="token function">git</span> commit -m <span class="token string">"%A_NOW%"</span><span class="token function">git</span> push pause</code></pre><h3 id="实例6"><a href="#实例6" class="headerlink" title="实例6"></a>实例6</h3><pre class=" language-bash"><code class="language-bash">@echo offdel /q /s C:\indexbackup\tmp\*.*setlocal enabledelayedexpansion<span class="token keyword">for</span> /f <span class="token string">"tokens=* delims="</span>  %%i <span class="token keyword">in</span> <span class="token punctuation">(</span>C:\indexbackup\session_name.txt<span class="token punctuation">)</span>  <span class="token keyword">do</span> <span class="token punctuation">(</span><span class="token keyword">set</span> target<span class="token operator">=</span>%%i<span class="token keyword">echo</span> <span class="token operator">!</span>target<span class="token operator">!</span>PowerShell Compress-Archive -Path D:\splunk_db\<span class="token operator">!</span>target<span class="token operator">!</span> -Force -DestinationPath C:\indexbackup\tmp\<span class="token operator">!</span>target<span class="token operator">!</span>.zip<span class="token punctuation">)</span>  del /q /s C:\indexbackup\index\*.*xcopy C:\indexbackup\tmp C:\indexbackup\index /e /ydel /q /s C:\indexbackup\tmp\*.*</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;batch说明&quot;&gt;&lt;a href=&quot;#batch说明&quot; class=&quot;headerlink&quot; title=&quot;batch说明&quot;&gt;&lt;/a&gt;batch说明&lt;/h2&gt;&lt;p&gt;更改txt文件后缀名为bat 即可创建bat文件&lt;/p&gt;
+&lt;p&gt;实例：&lt;/p&gt;
+&lt;p&gt;@ECHO O</summary>
+      
+    
+    
+    
+    
+    <category term="batch" scheme="http://zlincredible.com/tags/batch/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>正则表达式（一）</title>
+    <link href="http://zlincredible.com/2019/10/24/zheng-ze-biao-da-shi-yi/"/>
+    <id>http://zlincredible.com/2019/10/24/zheng-ze-biao-da-shi-yi/</id>
+    <published>2019-10-24T08:48:15.000Z</published>
+    <updated>2021-03-23T16:14:11.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="之前在两个页面URL传参的任务中用到了正则表达式，现在来系统的介绍一下正则表达式。"><a href="#之前在两个页面URL传参的任务中用到了正则表达式，现在来系统的介绍一下正则表达式。" class="headerlink" title="之前在两个页面URL传参的任务中用到了正则表达式，现在来系统的介绍一下正则表达式。"></a>之前在两个页面URL传参的任务中用到了正则表达式，现在来系统的介绍一下正则表达式。</h3><p><strong>首先要知道为什么用正则</strong></p><p>典型的搜索和替换操作要求您提供与预期的搜索结果匹配的确切文本。虽然这种技术对于对静态文本执行简单搜索和替换任务可能已经足够了，但它缺乏灵活性，<br>若采用这种方法搜索动态文本，即使不是不可能，至少也会变得很困难。<br>通过使用正则表达式，可以：<br>测试字符串内的模式。<br>例如，可以测试输入字符串，以查看字符串内是否出现电话号码模式或信用卡号码模式。这称为数据验证。<br>替换文本。<br>可以使用正则表达式来识别文档中的特定文本，完全删除该文本或者用其他文本替换它。<br>基于模式匹配从字符串中提取子字符串。<br>可以查找文档内或输入域内特定的文本。<br>例如，您可能需要搜索整个网站，删除过时的材料，以及替换某些 HTML 格式标记。在这种情况下，可以使用正则表达式来确定在每个文件中是否出现该材料或该<br> HTML 格式标记。此过程将受影响的文件列表缩小到包含需要删除或更改的材料的那些文件。然后可以使用正则表达式来删除过时的材料。最后，可以使用正则表<br> 达式来搜索和替换标记。</p><p><strong>一些基础的查询如下</strong></p><pre class=" language-bash"><code class="language-bash"><span class="token punctuation">[</span>0-9<span class="token punctuation">]</span>+匹配多个数字， <span class="token punctuation">[</span>0-9<span class="token punctuation">]</span> 匹配单个数字，+ 匹配一个或者多个。abc$匹配字母 abc 并以 abc 结尾，$ 为匹配输入字符串的结束位置。</code></pre><p><strong>数：</strong></p><pre class=" language-bash"><code class="language-bash"><span class="token keyword">function</span> getUrlParam<span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>                var reg <span class="token operator">=</span> new RegExp<span class="token punctuation">(</span><span class="token string">"(^|&amp;)"</span> + name + <span class="token string">"=([^&amp;]*)(&amp;|$)"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                var r <span class="token operator">=</span> window.location.search.substr<span class="token punctuation">(</span>1<span class="token punctuation">)</span>.match<span class="token punctuation">(</span>reg<span class="token punctuation">)</span><span class="token punctuation">;</span>                 <span class="token keyword">if</span> <span class="token punctuation">(</span>r <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token keyword">return</span> unescape<span class="token punctuation">(</span>r<span class="token punctuation">[</span>2<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                <span class="token keyword">return</span> null<span class="token punctuation">;</span>             <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>            var x1 <span class="token operator">=</span> getUrlParam<span class="token punctuation">(</span><span class="token string">'参数'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token keyword">if</span> <span class="token punctuation">(</span>x1 <span class="token operator">==</span><span class="token operator">=</span> <span class="token string">"Customer Focus"</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>                 document.getElementById<span class="token punctuation">(</span><span class="token string">"c"</span><span class="token punctuation">)</span>.click<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125; </span></code></pre><p><strong>作</strong></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;之前在两个页面URL传参的任务中用到了正则表达式，现在来系统的介绍一下正则表达式。&quot;&gt;&lt;a href=&quot;#之前在两个页面URL传参的任务中用到了正则表达式，现在来系统的介绍一下正则表达式。&quot; class=&quot;headerlink&quot; title=&quot;之前在两个页面URL</summary>
+      
+    
+    
+    
+    
+    <category term="JavaScript" scheme="http://zlincredible.com/tags/JavaScript/"/>
+    
+    <category term="HTML5" scheme="http://zlincredible.com/tags/HTML5/"/>
+    
+    <category term="正则表达式" scheme="http://zlincredible.com/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>yml文件安装app.md</title>
+    <link href="http://zlincredible.com/2019/10/11/yml-wen-jian-an-zhuang-app/"/>
+    <id>http://zlincredible.com/2019/10/11/yml-wen-jian-an-zhuang-app/</id>
+    <published>2019-10-11T09:40:24.000Z</published>
+    <updated>2021-03-23T15:44:12.795Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="yml文件安装app-md"><a href="#yml文件安装app-md" class="headerlink" title="yml文件安装app.md"></a>yml文件安装app.md</h2><h3 id="yml文件放到指定路径"><a href="#yml文件放到指定路径" class="headerlink" title="yml文件放到指定路径"></a>yml文件放到指定路径</h3><h3 id="在这个文件夹的路径下依次执行如下命令："><a href="#在这个文件夹的路径下依次执行如下命令：" class="headerlink" title="在这个文件夹的路径下依次执行如下命令："></a>在这个文件夹的路径下依次执行如下命令：</h3><pre class=" language-bash"><code class="language-bash">①docker-compose up -d mongo②docker-compose up -d mongo-init-replica③docker-compose up -d rocketchat④docker logs rocketchat_ap⑤docker-compose up -d hubot</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;yml文件安装app-md&quot;&gt;&lt;a href=&quot;#yml文件安装app-md&quot; class=&quot;headerlink&quot; title=&quot;yml文件安装app.md&quot;&gt;&lt;/a&gt;yml文件安装app.md&lt;/h2&gt;&lt;h3 id=&quot;yml文件放到指定路径&quot;&gt;&lt;a href=</summary>
+      
+    
+    
+    
+    
+    <category term="docker" scheme="http://zlincredible.com/tags/docker/"/>
+    
+    <category term="yml" scheme="http://zlincredible.com/tags/yml/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>yml文件</title>
+    <link href="http://zlincredible.com/2019/10/10/yml-wen-jian-ge-shi/"/>
+    <id>http://zlincredible.com/2019/10/10/yml-wen-jian-ge-shi/</id>
+    <published>2019-10-10T09:40:24.000Z</published>
+    <updated>2021-03-23T15:35:25.066Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="yml文件"><a href="#yml文件" class="headerlink" title="yml文件"></a>yml文件</h2><pre class=" language-bash"><code class="language-bash">version: <span class="token string">'3'</span>services:  mongo:    image: mongo:4.0    restart: unless-stopped<span class="token comment" spellcheck="true">#    image: mongo:4.1</span>    ports:      - 27017:27017    volumes:<span class="token comment" spellcheck="true">#      - /etc/localtime:/etc/localtime:ro</span>      - .\data\docker\mongo:/data/db    command: mongod --smallfiles --oplogSize 128 --replSet rs0 --storageEngine<span class="token operator">=</span>mmapv1    hostname: mongo    container_name: rocketchat_db    labels:      - <span class="token string">"traefik.enable=false"</span>  mongo-init-replica:    image: mongo:4.0    command: <span class="token operator">></span>      <span class="token function">bash</span> -c        <span class="token string">"for i in <span class="token variable"><span class="token variable">`</span><span class="token function">seq</span> 1 30<span class="token variable">`</span></span>; do          mongo mongo/rocketchat --eval \"            rs.initiate(&amp;#123;              _id: 'rs0',              members: [ &amp;#123; _id: 0, host: 'localhost:27017' &amp;#125; ]&amp;#125;)\" &amp;&amp;          s=$<span class="token variable">$?</span> &amp;&amp; break || s=$<span class="token variable">$?</span>;          echo \"Tried $<span class="token variable">$i</span> times. Waiting 5 secs...\";          sleep 5;        done; (exit $<span class="token variable">$s</span>)"</span>    depends_on:      - mongo  rocketchat:    image: rocket.chat:3.0.7    command: <span class="token operator">></span>      <span class="token function">bash</span> -c        <span class="token string">"for i in <span class="token variable"><span class="token variable">`</span><span class="token function">seq</span> 1 30<span class="token variable">`</span></span>; do          node main.js &amp;&amp;          s=$<span class="token variable">$?</span> &amp;&amp; break || s=$<span class="token variable">$?</span>;          echo \"Tried $<span class="token variable">$i</span> times. Waiting 5 secs...\";          sleep 5;        done; (exit $<span class="token variable">$s</span>)"</span>    restart: unless-stopped    depends_on:      - mongo    ports:      - 3000:3000    hostname: rocket.chat_3.0.7    container_name: rocketchat_ap    volumes:<span class="token comment" spellcheck="true">#      - /etc/localtime:/etc/localtime:ro</span>      - .\data\docker\rocketchat:/app/uploads    environment:      - PORT<span class="token operator">=</span>3000<span class="token comment" spellcheck="true">#      - ROOT_URL=http://10.254.164.135:3000/rocketchat</span>      - ROOT_URL<span class="token operator">=</span>http://localhost:3000/rocketchat      - MONGO_URL<span class="token operator">=</span>mongodb://mongo:27017/meteor      - MONGO_OPLOG_URL<span class="token operator">=</span>mongodb://mongo:27017/local<span class="token comment" spellcheck="true">#      - MONGO_URL=mongodb://mongo:27017/rocketchat</span><span class="token comment" spellcheck="true">#      - MONGO_URL=mongodb://10.254.164.135:27017/rocketchat</span>      - ADMIN_USERNAME<span class="token operator">=</span>admin      - ADMIN_PASS<span class="token operator">=</span>SALAsala0033<span class="token comment" spellcheck="true">#    labels:</span><span class="token comment" spellcheck="true">#      - "traefik.backend=rocketchat"</span><span class="token comment" spellcheck="true">#      - "traefik.frontend.rule=Host: your.domain.tld"</span>  hubot:    image: rocketchat/hubot-rocketchat:v1.0.11    depends_on:      - rocketchat    ports:      - 8080:8080    container_name: hubot    restart: unless-stopped    environment:<span class="token comment" spellcheck="true">#      - ROCKETCHAT_URL=http://10.254.164.135:3000/rocketchat</span>      - ROCKETCHAT_URL<span class="token operator">=</span>http://localhost:3000/rocketchat      - ROCKETCHAT_ROOM<span class="token operator">=</span>test_room      - ROCKETCHAT_USER<span class="token operator">=</span>sala      - ROCKETCHAT_PASSWORD<span class="token operator">=</span>bot.bot      - BOT_NAME<span class="token operator">=</span>SALA      - EXTERNAL_SCRIPTS<span class="token operator">=</span>hubot-seen,hubot-links    volumes:<span class="token comment" spellcheck="true">#      - /etc/localtime:/etc/localtime:ro</span>      - .\data\docker\hubot:/home/hubot/scripts<span class="token comment" spellcheck="true">#    extra_hosts:</span><span class="token comment" spellcheck="true">#      - "dh4.mywizard-aiops.accenture.com:172.22.0.3"</span><span class="token comment" spellcheck="true">#networks:</span><span class="token comment" spellcheck="true">#  default:</span><span class="token comment" spellcheck="true">#    driver: bridge</span><span class="token comment" spellcheck="true">#    ipam:</span><span class="token comment" spellcheck="true">#      driver: default</span><span class="token comment" spellcheck="true">#      config:</span><span class="token comment" spellcheck="true">#        - subnet: 172.18.0.0/24</span></code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;yml文件&quot;&gt;&lt;a href=&quot;#yml文件&quot; class=&quot;headerlink&quot; title=&quot;yml文件&quot;&gt;&lt;/a&gt;yml文件&lt;/h2&gt;&lt;pre class=&quot; language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;versi</summary>
+      
+    
+    
+    
+    
+    <category term="docker" scheme="http://zlincredible.com/tags/docker/"/>
+    
+    <category term="yml" scheme="http://zlincredible.com/tags/yml/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>随心</title>
+    <link href="http://zlincredible.com/2019/10/07/sui-xin-1/"/>
+    <id>http://zlincredible.com/2019/10/07/sui-xin-1/</id>
+    <published>2019-10-07T07:48:47.000Z</published>
+    <updated>2021-03-23T16:14:52.082Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="《序》"><a href="#《序》" class="headerlink" title="《序》"></a>《序》</h3><p>  冲着变换颜色的灯光吐出的烟气十分的撩人，在酒吧里，一个旋转的投光机散下<br>红色、绿色、紫色，他自己坐在那里，吸着烟，却在嘴角露出微笑，也许在此刻自认<br>为美丽的烟气也能让他心存感激，他太累了。<br>  在跑步的他，会感谢学校操场上站在围栏边上彻夜常亮的路灯，昏暗发黄的路灯<br>不知从哪年开始，到了今年忽亮忽暗的，是它想照亮想照亮的人吧，至少在他经过的<br>时候会格外地亮。<br>  他会感谢校园里年迈的老树，在长板上久坐时感觉不到秋雨中瑟瑟的微风，甚至<br>身体已经抖动，那把黑色的雨伞依旧伫立在他身上。没有蒙蒙的细雨，伞上却滴答<br>滴答响个不停。<br>  他依旧会感谢灼热的太阳，如果那把黑色的伞没有挡在她的额头，故事也许从来<br>不会这么写。<br>  然而现在。<br>  呼~~的一声。<br>  猛吸了一口，片刻后全部的吐了出来，烟气悬在半空，任凭灯色撒在上面。“酒吧<br>要散场了”，他想。收起展露出的微笑。<br>看着黑色的手机屏，所有都止步在了突然亮起来的那一排字：<br>“说了这么多，我真的对不起你，明天早上有课，你想说什么发给<br>我，明天早上起来后会好好回复你的。”<br>  他收起的嘴角又折出微笑，“凌晨两点关的酒吧，现在才一点<br>四十，再抽一根就走吧，”那杯蓝色的今夜不回家一饮而尽，冰块<br>在放下杯子时却没有发出任何响声，只有清吧里面舒缓的音乐让<br>酒意挥洒的淋漓尽致 ，他不知道何时打开的聊天窗口，又要在<br>酒吧最后一首音乐中结束。<br>  灯光洒向舞台，“我旁边的这位小姐姐送给大家一首《走马》，<br>希望在对岸等你的那位可以尽早遇见你。”今天酒吧驻唱的主唱<br>是两位25岁左右的女人，年轻的那位笑嘻嘻地冲台下说道。音<br>乐缓缓地响起，烟雾在变换颜色的灯光下跳动着、舞着。他右手<br>熟练的燃起打火机，左手把持着烟对准火苗上方，猛地一吸，发<br>出兹拉兹拉的声音后，他吐出红色、绿色、紫色的烟雾。<br>  他把头埋在尽是烟灰的桌子上，他似乎在想着什么……</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;《序》&quot;&gt;&lt;a href=&quot;#《序》&quot; class=&quot;headerlink&quot; title=&quot;《序》&quot;&gt;&lt;/a&gt;《序》&lt;/h3&gt;&lt;p&gt;  冲着变换颜色的灯光吐出的烟气十分的撩人，在酒吧里，一个旋转的投光机散下&lt;br&gt;红色、绿色、紫色，他自己坐在那里，吸着烟，却在嘴角</summary>
+      
+    
+    
+    
+    
+    <category term="小说" scheme="http://zlincredible.com/tags/%E5%B0%8F%E8%AF%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>splunk_download_link</title>
+    <link href="http://zlincredible.com/2019/09/29/splunk-download-link/"/>
+    <id>http://zlincredible.com/2019/09/29/splunk-download-link/</id>
+    <published>2019-09-29T09:40:24.000Z</published>
+    <updated>2021-03-23T16:25:36.738Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="splunk-download-link"><a href="#splunk-download-link" class="headerlink" title="splunk_download_link"></a>splunk_download_link</h2><pre class=" language-bash"><code class="language-bash">https://www.splunk.com/page/previous_releases<span class="token comment" spellcheck="true">#x86_64windows</span> </code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;splunk-download-link&quot;&gt;&lt;a href=&quot;#splunk-download-link&quot; class=&quot;headerlink&quot; title=&quot;splunk_download_link&quot;&gt;&lt;/a&gt;splunk_download_link&lt;/h2&gt;&lt;</summary>
+      
+    
+    
+    
+    
+    <category term="splunk" scheme="http://zlincredible.com/tags/splunk/"/>
+    
+    <category term="download" scheme="http://zlincredible.com/tags/download/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git上传source</title>
+    <link href="http://zlincredible.com/2019/09/20/git-shang-chuan-source/"/>
+    <id>http://zlincredible.com/2019/09/20/git-shang-chuan-source/</id>
+    <published>2019-09-20T09:40:24.000Z</published>
+    <updated>2021-03-23T16:25:20.835Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="git上传source"><a href="#git上传source" class="headerlink" title="git上传source"></a>git上传source</h2><pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> pull<span class="token function">git</span> add <span class="token keyword">.</span><span class="token function">git</span> commit -m <span class="token string">"注释信息"</span><span class="token function">git</span> push  </code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;git上传source&quot;&gt;&lt;a href=&quot;#git上传source&quot; class=&quot;headerlink&quot; title=&quot;git上传source&quot;&gt;&lt;/a&gt;git上传source&lt;/h2&gt;&lt;pre class=&quot; language-bash&quot;&gt;&lt;code cla</summary>
+      
+    
+    
+    
+    
+    <category term="git" scheme="http://zlincredible.com/tags/git/"/>
+    
+  </entry>
+  
+</feed>
